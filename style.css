@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mukta:wght@500&family=Open+Sans:ital,wght@0,400;1,300&family=PT+Sans:ital@1&family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: url("gym\ men.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    font-family: 'EB Garamond', serif;
+       
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li::after {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: 0.4s;
+    background-color: palevioletred;
+}
+
+nav ul li:hover::after {
+   width: 60%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+.chrome {
+    position: absolute;
+    top: 180px;
+    color: white;
+    font-size: 30px;
+    left: 100px;
+}
+
+.chrome h2 {
+    font-size: 4rem;
+
+}
+
+.chrome button {
+    padding: 15px 20px;
+    background-color: palevioletred;
+    color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.chrome button:hover {
+    color: black;
+    background-color: white;
+}
+
+.chrome p {
+    font-size: 1.2rem;
+    width: 900px;
+}
+
+
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+   float: right;
+   font-size: 23px;
+   display: none;
+   color: white;
+}
+
+/*Media Query section*/
+
+@media screen and (max-width: 700px) {
+       
+      .list {
+        display: block;
+        position: fixed;
+        background-color: palevioletred;
+        left: 100%; 
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        line-height: 60px;
+        text-align: center;
+        transition: all 2s;
+
+      }
+     
+      .checkBtn {
+        display: block;
+      }
+     
+      #check:checked~ul {
+        left: 0%;
+      }
+
+ .chrome h2 {
+      margin-bottom: -30px;
+      font-size: 2.1rem;
+ }
+ 
+ .chrome p {
+    padding-top: 35px;
+    font-size: 13px;
+    width: 87%;
+}
+
+.chrome button {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 10px;
+
+}
+
+nav {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    
+}
+
+}
+
+/*About section*/
+
+#about {
+    width: 90%;
+    height: 480px;
+    margin: auto;
+}
+
+.about-pic img{
+    width: 480px;
+    height: 480px;
+    
+}
+
+.about-main {
+    display: flex;
+    margin-top: 100px;
+}
+
+.about-content {
+     padding-left: 50px;
+     margin-top: 20px;
+     
+}
+
+.about-content h1 {
+     font-size: 35px;
+     font-family: 'Mukta', sans-serif;
+     font-weight: 900;
+     
+     
+}
+
+.about-content p {
+    color: gray;
+    padding-top: 40px;
+    word-spacing: 4px;
+    font-size: 18px;
+}
+
+.about-content span {
+    color: red;
+}
+
+.about-link ul li a {
+    color: black;
+    font-size: 15px;
+    font-family: "Open Sans", Arial, sans-serif;
+    word-spacing: 10px;
+    font-weight: 600;
+}
+
+.about-link ul li {
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.about-link ul {
+    margin-top: 30px;
+    display: block;
+}
+
+.about-link ul li i {
+    font-size: 11px;
+
+}
+
+.about-link ul li a:hover {
+      color: red;
+}
+
+/*Next*/
+
+#chit {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+}
+
+.chit-main {
+    display: flex;
+    background: radial-gradient(circle, rgba(63,94,251,0.57484243697479) 0%, rgba(252,70,107,0.7373074229691876) 100%);
+}
+
+.chit-main div {
+    color: white;
+    text-transform: uppercase;
+    padding: 40px 50px;
+    text-wrap: nowrap;
+    align-items: center;
+    padding-left: 60px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.chit-main div h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*training section*/
+
+#training {
+   width: 80%;
+   height: 700px;
+   margin: auto;
+}
+
+.training-main h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    width: 400px;
+    margin-left: 300px;
+    line-height: 45px;
+}
+
+.training-main span {
+    color: red;
+}
+
+.training-all {
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.training-single {
+    padding: 0 20px;
+}
+
+.training-single h2 {
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.training-single img {
+    width: 100px;
+}
+
+.training-single p {
+    line-height: 2rem;
+    color: gray;
+}
+
+/*workout*/
+
+#workout {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+.workout-main {
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.workout-main span {
+    color: red;
+}
+
+.workout-pics {
+    position: relative;
+    margin-top: 50px;
+}
+
+.workout-pics img {
+    padding: 0 3px;
+    width: 400px;
+    height: 350px;
+}
+
+.hey {
+    bottom: 22px;
+    left: 3px;
+    background-color: black;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    transition: all 1s;
+}
+
+.hey p {
+    padding: 5px 102px;
+    width: 394px;
+}
+
+
+.hey-1 {
+    bottom: 22px;
+    left: 408px;
+    background-color: black;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    
+}
+
+.hey-1 p {
+    padding: 5px 100px;
+    width: 394px;
+    text-wrap: nowrap;
+}
+
+.hey-2 {
+    bottom: 22px;
+    left: 813px;
+    background-color: black;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+}
+
+.hey-2 p {
+    padding: 5px 150px;
+    width: 393px;
+}
+
+.workout-pics:hover .hey-2 {
+    background-color: red;
+}
+
+.workout-pics:hover .hey-1 {
+    background-color: red;
+}
+
+
+.workout-pics:hover .hey {
+    background-color: red;
+}
+
+/*price and packages*/
+
+#price-pack {
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.price-single {
+    text-align: center;
+    box-shadow: 3px 4px 10px gray;
+}
+
+.price-head h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.price-head span {
+    color: red;
+}
+
+.price-single {
+    width: 22.5%;
+}
+
+.price-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-single ol {
+    list-style-type: none;
+    line-height: 50px;
+    color: gray;
+}
+
+.price-single h2 {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.price-single p {
+    color: red;
+    font-size: 50px;
+}
+
+.price-single button {
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    color: white;
+    background-color: red;
+    font-family: 'Mukta', sans-serif;
+    border: none;
+
+}
+
+.price-single p i {
+    font-size: 20px;
+}
+
+ol li i {
+    padding-right: 5px;
+    font-size: 9px;
+}
+
+/*Euipments section*/
+
+#equipments {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.equipments-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.equipments-single {
+    width: 26.6%;
+    position: relative;
+}
+
+.equipments-single p {
+    padding-top: 50px;
+    padding-left: 50px;  
+    top: 100px;
+    width: 250px;
+    color: gray;
+}
+
+.equipments-single img {
+    width: 40px;
+    margin-top: 5px;
+}
+
+.only h2 {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    display: flex;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/*success*/
+
+#success {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+    background-color: #2296E3;
+
+}
+
+.success-head h2 {
+    color: white;
+    padding-top: 100px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.success-head span {
+    color: red;
+}
+
+
+.success-pic {
+    padding-top: 80px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.success-pic img {
+    width: 550px;
+    height: 370px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+/*schedule*/
+
+#schedule {
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.schedule-head h2 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.schedule-head span {
+    color: red;
+}
+
+.tble table {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.tble table, th, td {
+    text-align: center;
+    border-bottom: 1px solid #D6EEEE;  
+    border-collapse: collapse;
+    text-wrap: nowrap;
+}
+
+.tble th, td {
+    padding: 25px 30px;
+}
+
+.tble th {
+    background-color: #2296E3;
+    color: white;
+}
+
+td:nth-child(odd) {
+    background-color: #D6EEEE;
+}
+
+/*Fitness trainer*/
+
+#trainer {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Mukta', sans-serif;
+}
+
+.trainer-main h2 {
+     text-align: center;
+     font-size: 40px;
+
+}
+
+.trainer-main span {
+    color: red;
+}
+
+.trainer-pics {
+    padding-left: 50px;
+    width: 100%;
+    height: 406px;
+    background: url("/bg_5.jpg.webp");
+    transition: all 3s ease-out;
+    margin-top: 30px;
+}
+
+.trainer-pics img {
+    width: 280px;
+}
+
+/*blog section*/
+
+#people {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.people-main {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.people-pic img {
+    width: 70px;
+    box-shadow: 4px 4px 10px gray;
+
+}
+
+.people-pic {
+    padding-top: 20px;
+    position: relative;
+    margin-left: 0 80px;
+}
+
+.people-single h2 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.people-single p1 {
+    position: absolute;
+    top: 60px;
+    color: red;
+    left: 100px;
+}
+
+.people-text {
+    width: 30%;
+    padding-top: 60px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 30px;
+    box-shadow: 4px 4px 10px gray;
+    margin-top: 40px;
+}
+
+.people-text p {
+    color: gray;
+}
+
+.people-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Recent blog*/
+
+#blog {
+    width: 90%;
+    height: 800px;
+    margin: auto;
+
+}
+
+.blog-head {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.blog-single img {
+     width: 290px;
+     height: 250px;
+}
+
+.blog-main {
+    display: flex;
+    margin-top: 50px;
+}
+
+.blog-text h2 {
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.blog-text {
+    padding:0 20px;
+    margin-top: 30px;
+}
+
+.blog-text p {
+    color: gray;
+    line-height: 30px;
+}
+
+.blog-text span {
+    color: gray;
+}
+
+.blog-text a {
+    text-decoration: none;
+    color: red;
+    padding-left: 10px;
+}
+
+.text-sub {
+    margin-bottom: 20px;
+}
+
+/*last second section*/
+
+#photo {
+    width: 100%;
+    height: 800px;
+    background: url("/bg_4.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.photo-head {
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.photo-head span {
+    color: red;
+}
+
+.photo-btn {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+}
+
+.photo-btn button {
+    padding: 13px 30px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    border: none;
+    background-color: #e1193e;
+    color: white;
+    cursor: pointer;
+}
+
+.photo-btn h2 {
+    color: white;
+    padding-top: 40px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+}
+
+.photo-btn input {
+    padding: 12px 20px;
+}
+
+#hgh {
+    width: 420px;
+}
+
+.btn2 {
+    position: absolute;
+    text-wrap: nowrap;
+    top: 300px;
+    left: 30px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.btn3 {
+    position: absolute;
+    text-wrap: nowrap;
+    top: 300px;
+    left: 250px;
+    width: 200px;
+}
+
+form {
+    padding-left: 30px;
+    width: 600px;
+    height: 400px;
+    background-color: #0a113f;
+}
+
+/*footer*/
+
+#footer {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #030513;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.footer-main {
+   padding-top: 100px;
+   display: flex;
+   justify-content: space-around;
+   padding-left: 50px;
+   
+}
+
+.footer-single {
+    width: 25%;
+    color: white;
+}
+
+.footer-single i {
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: red;
+    font-size: 10px;
+}
+
+.footer-single p {
+    color: white;
+}
+
+.footer-single h2 {
+    font-size: 34px;   
+}
+
+.footer-single ol {
+    list-style-type: none;
+}
+
+.footer-single p {
+    line-height: 30px;
+}
+
+.footer-pics img {
+    width: 80px;
+}
+
+.footer-pics {
+    padding-top: 20px;
+}
+
+.last {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/*---------About us --------------------*/
+
+nav-link {
+    display: flex;
+    justify-content: space-around;
+    background: url("/bg_1.jpg.webp");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    font-family: 'EB Garamond', serif;
+       
+}
+
+.chrome2 {
+    position: absolute;
+    top: 300px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+nav-link ul li::after {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: 0.4s;
+    background-color: palevioletred;
+}
+
+nav-link ul li:hover::after {
+   width: 60%;
+}
+
+.logo1 {
+    color: white;
+    font-size: 15px;
+}
+
+/*----------/course/Trainers section---------*/
+
+.training-main2 h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+    width: 400px;
+    margin-left: 300px;
+    line-height: 45px;
+}
+
+.training-main2 span {
+    color: red;
+}
+
+/*--------  Classes--------*/
+
+#workout1 {
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+}
+
+/*-------blog/news-------*/
+
+#blog3 {
+    width: 90%;
+    height: 1400px;
+    margin: auto;
+
+}

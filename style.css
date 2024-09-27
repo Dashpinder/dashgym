@@ -127,29 +127,31 @@ nav {
         left: 0%;
       }
 
+.chrome {
+    position: absolute;
+    width: 85%;
+    left: 20px;
+}
+
  .chrome h2 {
       margin-bottom: -30px;
-      font-size: 2.1rem;
+      font-size: 2.4rem;
  }
  
  .chrome p {
     padding-top: 35px;
-    font-size: 13px;
+    font-size: 15px;
     width: 87%;
 }
 
 .chrome button {
     font-size: 12px;
-    cursor: pointer;
-    padding: 8px 10px;
+    padding: 10px 12px;
 
 }
 
 nav {
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    
+     background-position: 60%;
 }
 
 }
@@ -225,6 +227,37 @@ nav {
       color: red;
 }
 
+@media screen and (max-width: 700px) {
+    .about-main {
+        flex-direction: column;
+        margin-top: 55px;
+    }
+
+    .about-main h1{
+        margin-top: 30px;
+    }
+
+    .about-pic img{
+        width: 100%;
+        height: 55vh;
+    }
+
+    .about-content p {
+        padding-top: 23px;
+    }
+
+    .about-content {
+        margin-top: 520px;
+        padding-left: 17px;
+    }
+    .about-link ul li a {
+     font-size: 14px;
+     }
+
+}
+
+
+
 /*Next*/
 
 #chit {
@@ -252,6 +285,23 @@ nav {
     text-align: center;
     font-size: 3rem;
 }
+
+@media (max-width: 700px) {
+    #chit {
+        height: 112vh;
+    }
+
+    .chit-main {
+        display: block;
+    }
+    .chit-main div {
+       text-align: center;
+        padding: 10px 50px;
+    }
+
+}
+
+
 
 /*training section*/
 
@@ -300,6 +350,32 @@ nav {
     color: gray;
 }
 
+
+@media screen and (max-width: 700px) {
+
+    #training {
+     height: 210vh;  
+    }
+
+.training-all {
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.training-single {
+    margin-top: 24px;
+}
+
+.training-main h3 {
+    width: 300px;
+    text-align: left;
+    margin: auto;
+   margin-top: 250px;
+}
+
+}
+
+
 /*workout*/
 
 #workout {
@@ -327,6 +403,49 @@ nav {
     padding: 0 3px;
     width: 400px;
     height: 350px;
+}
+
+
+@media (max-width: 700px) {
+    #workout {
+        height: 170vh;
+}
+
+    .workout-pics {
+        width: 90%;
+        margin: auto;
+        height: 360px;
+    }
+    .workout-pics img{
+        position: relative;  
+        width: 100%;
+        height: 330px;
+    }
+
+    .hey p {
+        width: 330px;
+        font-size: 17px;
+        display: none;
+    }
+     .hey {
+        width: 330px;
+     }
+    
+    .hey-1{
+        width: 200px;
+    } 
+     
+    .hey-1 p {
+        left: -405px;
+        top: 290px;
+        background-color: black;
+        position: absolute;
+        z-index: 2;
+        display: none;
+    }
+    .hey-2 p{
+        display: none;
+    }
 }
 
 .hey {
@@ -464,6 +583,30 @@ ol li i {
     font-size: 9px;
 }
 
+@media (max-width: 700px) {
+    
+
+    .price-main {
+        flex-direction: column;
+    }
+    .price-single {
+        width: 90.5%;
+        margin: auto;
+        height: 450px;
+        margin-bottom: 24px;
+    }
+    #price-pack {
+        width: 90%;
+        height: 285vh;
+    }
+    .price-head h2 {
+        margin-bottom: 22px;
+        font-size: 27px;
+    }
+    
+}
+
+
 /*Euipments section*/
 
 #equipments {
@@ -507,6 +650,26 @@ ol li i {
     line-height: 30px;
 }
 
+
+@media (max-width: 700px) {
+    #equipments {
+        height: 78vh;
+    }
+    .equipments-main {
+        flex-direction: column;
+    }
+    .only h2 {
+        left: 50px;
+        top: 14px;
+        font-size: 19px;
+        width: 90vw;
+        line-height: 30px;
+    }
+    .equipments-single p {
+      padding-top: inherit;
+    }
+}
+
 /*success*/
 
 #success {
@@ -543,6 +706,33 @@ ol li i {
     border-radius: 6px;
     padding-left: 10px;
 }
+
+@media (max-width: 700px) {
+    #success {
+        height: 145vh;
+     
+    }
+    
+    .success-head h2 {
+        padding-top: 43px;
+    }
+
+    .success-pic img {
+        width: 362px;
+        border-radius: 6px;
+        margin: auto;
+    }
+    .success-pic {
+        padding-top: 40px;
+        padding-left: 0;
+    }
+    .schedule-head h2 {
+        margin-top: 100px;
+    }
+
+}
+
+
 
 /*schedule*/
 
@@ -590,6 +780,16 @@ td:nth-child(odd) {
     background-color: #D6EEEE;
 }
 
+
+@media (max-width: 700px){
+    .schedule-head h2 {
+        margin-top: 100px;
+     }
+
+
+
+}
+
 /*Fitness trainer*/
 
 #trainer {
@@ -612,13 +812,32 @@ td:nth-child(odd) {
     padding-left: 50px;
     width: 100%;
     height: 406px;
-    background: url("./bg5.jpg.webp");
+    background: url("/bg5.jpg.webp");
     transition: all 3s ease-out;
     margin-top: 30px;
 }
 
 .trainer-pics img {
     width: 280px;
+}
+
+
+@media (max-width: 700px){
+    #trainer {
+        height: 253vh;
+      
+    }
+    .trainer-pics {
+        width: 100%;
+        height: unset;
+    }
+    .trainer-pics img {
+        width: 255px;
+        height: auto;
+    }
+
+
+
 }
 
 /*blog section*/
@@ -681,6 +900,17 @@ td:nth-child(odd) {
     justify-content: space-between;
 }
 
+
+@media (max-width: 700px) {
+    #people {
+        height: 145vh;
+     }
+     .people-row{
+        display: block;
+     }
+
+}
+
 /*Recent blog*/
 
 #blog {
@@ -737,12 +967,29 @@ td:nth-child(odd) {
     margin-bottom: 20px;
 }
 
+@media (max-width: 700px){
+    #blog{
+        height: 330vh;
+    }
+
+    .blog-head {
+        margin-top: 10px;
+    }
+
+    .blog-main {
+         display: block; 
+        width: 85%;
+        margin: auto;
+    }
+
+}
+
 /*last second section*/
 
 #photo {
     width: 100%;
     height: 800px;
-    background: url("./bg4.jpg.webp");
+    background: url("/bg4.jpg.webp");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -818,6 +1065,41 @@ form {
     background-color: #0a113f;
 }
 
+@media (max-width:700px) {
+    .photo-head {
+        font-size: 33px;
+        left: 40px;
+    }
+    .photo-btn {
+        left: 18px;
+    }
+    .photo-btn button {
+        padding: 16px 30px;
+    }
+
+
+    .photo-btn input {
+        padding: 13px 8px;
+        width: 132px;
+    }
+    #hgh {
+        width: 270px;
+    }
+    form {
+        width: 113%;
+}
+.btn2 {
+    top: 310px;
+    width: 129px;
+}
+.btn3 {
+    top: 310px;
+    left: 174px;
+    width: 129px;
+}
+
+}
+
 /*footer*/
 
 #footer {
@@ -880,12 +1162,26 @@ form {
     margin-top: 150px;
 }
 
+@media(max-width: 700px) {
+    #footer {
+        width: 100%;
+        height: 178vh;
+    }
+    .footer-main {
+        display: block;
+    }
+    .footer-single {
+        width: 90%;
+    }
+
+}
+
 /*---------About us --------------------*/
 
 nav-link {
     display: flex;
     justify-content: space-around;
-    background: url("./bg1.jpg.webp");
+    background: url("/bg1.jpg.webp");
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -941,6 +1237,15 @@ nav-link ul li:hover::after {
     color: red;
 }
 
+@media (max-width: 700px){
+    .training-main2 h3 {
+        margin-left: -10px;
+        font-size: 40px;
+        width: 100%;
+    }
+
+}
+
 /*--------  Classes--------*/
 
 #workout1 {
@@ -956,4 +1261,11 @@ nav-link ul li:hover::after {
     height: 1400px;
     margin: auto;
 
+}
+
+/*script ki id*/
+
+#intro {
+    color: #0984e3;
+    text-decoration: none;
 }
